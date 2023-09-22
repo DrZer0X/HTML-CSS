@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+         }
+         header{
+            background-color: blue;
+            padding: 10px;
+            margin-top: 0px;
+            box-shadow: inset -8px -25px 32px 18px darkblue;
+            border-radius: 0px 0px 10px 0px;
+            /*inset ou offset, X, Y, Blur, Sprad. Color;*/
+         }
+         header > h1{
+            font-family: fantasy;
+            font-size: 3em;
+            color: black;
+            
+         }
+         nav{
+            background-color: darkblue;
+            padding: 3px;
+            margin: -10px;
+            box-shadow: 1px 15px 20px 1px rgba(0, 0, 0, 0.300);
+         }
+         nav> a{ 
+            text-decoration: none;
+            color: white; 
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+           
+        }
+        main{
+            background-color: lightgray;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        aside{
+            border-radius: 0px 50px 50px 0px;
+            margin: -10px; 
+            font-size: 0.8em;         
+        }
+        footer{ 
+            padding: 5px;
+            background-color: black;
+            color: white;
+            text-align: center;}
+            footer > p{ margin: 0px}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Lorem</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat ipsum voluptatibus, animi ipsam cupiditate aspernatur. Ea, iusto soluta aut accusantium ad dolore dolorem adipisci sequi iste sit eos similique.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eius corporis quidem saepe fugit veniam. Molestias vel rem vitae earum officiis molestiae voluptatibus, laudantium minus atque optio obcaecati modi consectetur.
+                    </p>
+                <aside>
+                    <p><i style="font-size: 1em;">Atigo escrito por Vogour Zaar</i></p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Jalima Mei</p>
+    </footer>
+</body>
+</html>

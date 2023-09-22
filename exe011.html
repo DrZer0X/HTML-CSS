@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <hr>
+    <p>Tente abri este site em dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="Ico/P.png" type="image/png">
+        <source media="(max-width: 1350px)" srcset="Ico/M.png" type="image/png">
+        <img src="Ico/G.png" alt="Imagem Fléxivel">
+    </picture>
+    <hr>
+    <h1>Reproduzir Musica</h1>
+    <p>Musiquinha</p>
+    <audio src="Midia/EurobeatDDLCMAS.mp3" controls autoplay></audio>
+    <!--Funciona melhor com formato Mp3 Wav OGG-->
+    <p>Outra musica</p>
+    <audio preload="metadata" controls>
+        <source src="Midia/fire-again-ft.ashnikko-official-music-video.m4a" type="audio/MPEG">
+        <p>Infelismente o navegador não é compativel com o audio. <a href="Midia/fire-again-ft.ashnikko-official-music-video.m4a"><strong>Baixe Aqui!</strong></a></p>
+    </audio>
+    <hr>
+    <h1>inserindo videos</h1>
+    <h2>video locão</h2>
+    <video width="560" controls poster="Ico/limoes-capa.png">
+        <source src="Midia/So-limoes.mkv" type="">
+        <source src="Midia/so-limoes.webm" type="">
+        <source src="Midia/So-limoes.mp4" type="">
+        <p>Rapaz, ele ta sem zap</p>
+    </video>
+    <hr>
+    <h2>Video do Youtoba</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=2TYkTovQXzqSGM8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <h2>Video do vinicio</h2>
+
+    <hr>
+</body>
+</html>
