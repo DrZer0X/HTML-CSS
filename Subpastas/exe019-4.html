@@ -3,18 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento</title>
+    <title>Fundo fixo de tela</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <style>
-    body{
-        height: 96vh;
-        background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
+        body{
+            height: 100vh;
+            background:  black url('../Ico/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            /*(px, %. auto, contain, cover) */
+        }
+        header{
+            position: absolute;
+            background-color: white;
+            max-width: 360px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        main{
+            background-color: white;
+            max-width: 500px;
+            min-width: 200px;
+            padding: 10px;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+           
+        }
+        #q2{
+            max-width: 300px;
+            margin-top: 10px;
+        }
+        #s1{
+            position: absolute;
+            top: 120px;
+            left:10px;
+            max-width: 350px;
+        }
+        #s0{
+            position: absolute;
+            top: 20px;
+            left:946px;
+            max-width: 371px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            font-size: 2em;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+   
     </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Teste de Imagem de fundo</h1>
+    </header>
+    <main id="s0">
+        <img src="../Chupataro.png" alt="i" style="max-width: 100%;">
+    </main>
+    <main id="s1">
+        <img src="../Goku-Petista.jpg" alt="x" style="width: 100%;"">
+    </main>
+    <main id="s2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, illum sapiente blanditiis laborum, nesciunt animi minus quam, accusamus eius ab voluptates corporis quod veritatis quibusdam itaque hic amet dolore! Sapiente? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius nisi sit sint soluta, placeat, repellendus voluptas pariatur, porro dolores officiis tempora doloremque rerum impedit unde aliquam maxime a. Vitae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ab natus vitae obcaecati dolorem blanditiis consequuntur velit ad, magnam vero expedita commodi magni eius totam ipsa. Labore perferendis officia consectetur.</p>
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, illum sapiente blanditiis laborum, nesciunt animi minus quam, accusamus eius ab voluptates corporis quod veritatis quibusdam itaque hic amet dolore! Sapiente? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius nisi sit sint soluta, placeat, repellendus voluptas pariatur, porro dolores officiis tempora doloremque rerum impedit unde aliquam maxime a. Vitae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ab natus vitae obcaecati dolorem blanditiis consequuntur velit ad, magnam vero expedita commodi magni eius totam ipsa. Labore perferendis officia consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consectetur dignissimos pariatur distinctio incidunt cum harum quisquam aliquam esse, nostrum assumenda sit fugiat voluptatem odio. Nesciunt iure dignissimos aliquid minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta quae expedita libero soluta cum maiores quis fuga voluptatem veniam officia adipisci aliquam, numquam iste velit ipsa magnam explicabo aperiam!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, illum sapiente blanditiis laborum, nesciunt animi minus quam, accusamus eius ab voluptates corporis quod veritatis quibusdam itaque hic amet dolore! Sapiente? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius nisi sit sint soluta, placeat, repellendus voluptas pariatur, porro dolores officiis tempora doloremque rerum impedit unde aliquam maxime a. Vitae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ab natus vitae obcaecati dolorem blanditiis consequuntur velit ad, magnam vero expedita commodi magni eius totam ipsa. Labore perferendis officia consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum repellendus doloribus deleniti adipisci maxime, corrupti assumenda eos doloremque at hic repudiandae reiciendis aliquid quibusdam ex natus minima consequatur quod!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, illum sapiente blanditiis laborum, nesciunt animi minus quam, accusamus eius ab voluptates corporis quod veritatis quibusdam itaque hic amet dolore! Sapiente? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius nisi sit sint soluta, placeat, repellendus voluptas pariatur, porro dolores officiis tempora doloremque rerum impedit unde aliquam maxime a. Vitae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ab natus vitae obcaecati dolorem blanditiis consequuntur velit ad, magnam vero expedita commodi magni eius totam ipsa. Labore perferendis officia consectetur.</p>
+    </main>
+    <main id="q2">
+        <a href="exe019-3.html">Exercicio anterior</a>
+    </main>
 </body>
 </html>
