@@ -11,7 +11,7 @@
         }
 
         table{
-            min-width: 400px;
+            min-width: 600px;
             border-collapse: collapse;
             position: relative;
         }
@@ -33,7 +33,7 @@
         tbody > tr:nth-child(odd){}
         tbody > tr:nth-child(even){}
         
-        tbody.big > tr:hover {
+        tbody >tr:hover {
             background-color: lightgray;
         }
         td.num{
@@ -51,6 +51,12 @@
             background-color: gold;
         }
 
+        .Grupo{
+            background-color: gray;
+        }
+       section{
+        overflow-x: auto;
+       }
     
     </style>
 </head>
@@ -234,52 +240,59 @@
     </table >
 </section>
 <h1>Mais Tabélas</h1>
-<table>
-    <thead>
-        <th>Grupo</th>
-        <th>Nomes</th>
-        <th colspan="3">Filmes</th>
-    </thead>
-    <tbody >
-        <tr>
-            <th rowspan="3">Mulheres</td>
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-        <tr>
-            <td>Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td>Batman</td>
-        </tr>
-        <tr>
-            <td>Cláudia Meio</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
-        <tr>
-            <th rowspan="3">Homens</td>
-            <td>Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-        </tr>
-        <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-        </tr>
-        <tr>
-            <td>Fabiano Mota</td>
-            <td>Star Wars 6</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-        </tr>
-    </tbody>
-</table>
+<section>
+    <table>
+        <colgroup>
+        <col class="Grupo">
+        <col class="Nome">
+        <col class="Filmes" span="3">
+        </colgroup>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        <tbody>
+            <th rowspan="4" scope="rowgroup">Mulheres</td>
+            <tr>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Meio</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <th rowspan="4" scope="rowgroup">Homens</td>
+            <tr>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 6</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 </body>
 </html>
