@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>É o FORMULAS mano D:</h1>
+        <fieldset>
+            <form action="cadastro.php" method="post" autocomplete="off">
+                <p><label for="iusu">Usuario:</label> 
+                    <input type="text" name="usu" id="iusu" required minlength="5" placeholder="Nome"></p>
+                <p><label for="ipas">Senha:</label> 
+                    <input type="password" name="pas" id="ipas" required minlength="8" placeholder="Senha"></p>
+                <p><label for="imedia">Media:</label>
+                    <input type="number" name="Media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5"></p>
+                <p><label for="idata">Periodo letivo:</label>
+                     <input type="date" name="data" id="idata"></p>
+                <p><label for="idar">qual hora que você da?</label>
+                    <input type="time" name="dar" id="idar"></p>
+    
+                    <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Resetar">
+                    </p>
+                    
+            </form>
+        </fieldset>
+        <hr>
+            <fieldset>
+            <legend>Se tem dado em Casa?</legend>
+                <form>
+                <!--Regfx-->
+                    <p><label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail"  autocomplete="email"></p>
+                    
+                    <p><label for="itel">Telephone</label>
+                        <input type="tel" name="tel" id="itel" autocomplete="tel"></p>        
+                    
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Resetar">
+                    </p>
+                </fieldset>
+              </form>
+        <hr>
+            <fieldset>
+            <legend>Questionario do buzzfeed</legend>
+                <h3>Tu é viado?</h2>
+                <p><input type="checkbox" name="1" id="i1">
+                    <label for="i1">sim</label></p>
+                <p><input type="checkbox" name="2" id="i2"> 
+                    <label for="i2">claro</label></p>
+                <p><input type="checkbox" name="3" id="i3">
+                    <label for="i3">concerteza</label></p>
+                    <h3>Da o cu?</H2>
+                    <p><input type="radio" name="5" id="i5" checked><label for="i5">Sim</label></p>
+                    <p><input type="radio" name="5" id="i6"><label for="i6">Sim</label></p>
+                    <h3>Informe a cor do teu anus</h3>
+                    <p><label for="icolor"> cor </label>
+                        <input type="color" name="color" id="icolor" value="#fb83f1"></p>
+                    <h3>quanto seu rabo aguenta?</h3>
+                    <p><label for="irange">pouca pika</label> 
+                        <input type="range" name="range" id="irange" value="0" min="1"  max="10">
+                    <label for="irange">muita pika</label></p>
+                    <h3>Manda uma foto</h3>
+                    <p><label for="ifoto">Foto</label> <input type="file" name="file" id="ifile"></p>
+            </fieldset>
+        <hr>
+            <fieldset>
+                <form action="post">
+                    <legend>Select datalist textarea</legend>
+
+                    <p><label for="iest"></label>
+                        <select name="estado" id="iest">
+                            <option value="" selected>---Escolha---</option>
+                       <optgroup label="Sudoeste">
+                            <option value="NG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                       </optgroup>
+                       <optgroup label="Nordeste">
+                            <option value="MA">Macarrão</option>
+                            <option value="CE">Ceará</option>
+                            <option value="RM">Rio Grande do Norte</option>
+                       </optgroup>
+                    </select></p>
+
+                    <p><label for="iptof">Profissão:</label>
+                        <input type="text" name="prof" id="iprof" list="lstprof">
+                        <datalist id="lstprof">
+                        <option>Ademiro</option>
+                        <option>Contabilista</option>
+                        <option>Desenvolvedor</option>
+                        <option>Professor</option>
+                    </datalist></p>
+
+                    <p><label for="imsg">Mensagem:</label><br>
+                        <textarea name="msg" id="imsg" cols="60" rows="10"></textarea></p>
+                </form>
+            </fieldset>
+        <hr>
+            <h2><a href="Subpastas/exe024-2.html">Proxima Pàgina</a></h2>
+              
+            
+                    
+        
+        
+       
+
+</body>
+</html>
