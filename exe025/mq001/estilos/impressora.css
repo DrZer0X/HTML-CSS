@@ -4,8 +4,9 @@
     padding: 10px;
 }
 html{
-    font-family: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.5em;
+    font-size: 1.em;
 }
 
 menu{
