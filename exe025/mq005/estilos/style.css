@@ -15,8 +15,20 @@ header > h1{
     padding: 10px;
     text-align: center;
 }
-menu{
+#burger{
     display: block;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+#burger:hover{
+    background-color: white;
+    color: black;
+}
+menu{
+    display: none;
     background-color: rgb(99, 98, 98);
 }
 menu >ul{
@@ -37,9 +49,10 @@ main{
     width: 90vw;
     background-color: white;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 10px;
-    border-radius: 19px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 article > h2{
     padding-bottom: 20px;

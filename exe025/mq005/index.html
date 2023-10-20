@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="resize()">
     <header>
         <h1>Lorem</h1>
-        <menu>
+        <i class="material-icons" id="burger" onclick="clickmenu()">
+            menu
+            </i>
+        <menu id="menu">
             <ul>
                 <li><a href="#">Lorem</a></li>
                 <li><a href="#">Lorem</a></li>
@@ -39,5 +44,21 @@
         </p>
         </article>
     </main>
+    <script>
+        function resize() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+        function clickmenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
-</html>
+</html> 
